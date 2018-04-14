@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace familyApp.Controllers
+namespace eba_crm.Controllers
 {
     [Route("api/[controller]")]
     public class SampleDataController : Controller

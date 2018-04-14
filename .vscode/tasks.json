@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/familyApp.csproj"
+                "${workspaceFolder}/eba_crm.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
