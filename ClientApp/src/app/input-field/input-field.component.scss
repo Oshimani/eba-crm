@@ -1,0 +1,16 @@
+.input-col {
+    padding-right: 0px;
+    input {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+}
+
+.button-col {
+    padding-left: 0px;
+    .btn {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+}

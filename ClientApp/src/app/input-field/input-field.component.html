@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <label for="{{formField.internalName}}-id">{{formField.displayName}}:
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 input-col">
+        <input type="text"
+               id="{{formField.internalName}}-id"
+               class="form-control"
+               [disabled]="formField.state === FormFieldState.readonly"
+               (keyup)="handleValueChanged()"
+               [(ngModel)]="formField.value" />
+    </div>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 button-col">
+        <button *ngIf="formField.state === FormFieldState.readonly"
+                type="button"
+                class="btn btn-primary"
+                (click)="handleEditClicked()">Edit</button>
+        <button *ngIf="formField.state === FormFieldState.editable || formField.state === FormFieldState.modified"
+                [disabled]="formField.state === FormFieldState.editable"
+                type="button"
+                class="btn btn-success"
+                (click)="handleSaveClicked()">Save</button>
+    </div>
+</div>

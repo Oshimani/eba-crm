@@ -1,4 +1,4 @@
-import { Address, Contact, Product, Issue } from './index.models';
+import { Address, Contact, Product, Issue, FormField } from './index.models';
 
 export class CustomerData {
     name: string;

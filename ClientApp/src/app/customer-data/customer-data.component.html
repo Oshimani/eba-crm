@@ -4,7 +4,24 @@
             <!-- Basic Data -->
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <h3>Basic Customer Data</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h3>Basic Customer Data</h3>
+                        </div>
+                    </div>
+                    <!-- <app-input-field *ngFor="let formField of formConfig.fields" [formField]="formField" [value]="customerData[formField.internalName]"></app-input-field> -->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <app-input-field [formField]="getFormFieldByInternalName('name')"
+                                             [value]="customerData.name" (changeSubmitted)="handleChangeSubmitted($event)"></app-input-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <app-input-field [formField]="getFormFieldByInternalName('id')"
+                                             [value]="customerData.id"></app-input-field>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Products -->

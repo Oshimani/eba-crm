@@ -4,6 +4,7 @@ export class Address {
     city: string;
     street: string;
     number: string;
+
     constructor(country: string, zip: string, city: string, street: string, number: string) {
         this.country = country;
         this.zip = zip;

@@ -4,3 +4,5 @@ export { Contact } from './contact.model';
 export { Product } from './product.model';
 export { Issue } from './issue.model';
 export { CustomerData } from './customer-data.model';
+export { FormField } from './form-field.model';
+export { FormConfig } from './form-config.model';
